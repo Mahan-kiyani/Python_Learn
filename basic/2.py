@@ -5,4 +5,4 @@ for num in range(10):
     
     if num % 2 == 0:
         print(num)
-    print('fohsh bade')
+    print('fohsh bade') 
