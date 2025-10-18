@@ -1,8 +1,8 @@
-def Your_feel(feel):
+def your_feel(feel):
     
     if feel == 'happy':
         print('hooooooorrrraaaaaaaaa')
     return False
 
 
-Your_feel('happy')
+your_feel('happy')
