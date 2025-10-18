@@ -1,11 +1,14 @@
 # simple Calculator, Python code
 
-num_1 = int(input('Enter number: '))
-num_2 = int(input('Enter number: '))
 
-operation = input('Enter your operation: ')
+
+
 
 while True:
+    
+    operation = input('Enter your operation: ')
+    num_1 = int(input('Enter number: '))
+    num_2 = int(input('Enter number: '))
     
     match operation:
         case '+':
