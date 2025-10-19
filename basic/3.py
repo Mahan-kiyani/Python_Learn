@@ -1,9 +1,5 @@
 # simple Calculator, Python code
 
-
-
-
-
 while True:
     
     operation = input('Enter your operation: ')
