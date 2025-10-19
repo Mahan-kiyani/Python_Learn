@@ -15,6 +15,7 @@ while True:
             
         case '*':
             reslt = num_1 * num_2
+            
         case '/':
             reslt = num_1 / num_2
             
