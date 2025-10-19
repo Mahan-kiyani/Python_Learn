@@ -24,3 +24,5 @@ while True:
 
 if isinstance(reslt, int):
     print(reslt)
+    
+    
