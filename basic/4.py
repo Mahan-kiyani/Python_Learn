@@ -1,8 +1,20 @@
-def your_feel(feel):
+# Number Guessing Game Project
+
+import random
+
+number = random.randint(0, 100)
+
+for _ in range(10):
     
-    if feel == 'happy':
-        print('hooooooorrrraaaaaaaaa')
-    return False
-
-
-your_feel('happy')
+    guess = int(input('Enter a Number you think that is: '))    
+    
+    if guess < number:
+        print('\"\"your guess is lower than\"\"')
+        continue
+    
+    elif guess > number:
+        print('\"your guess is Higher than\"')
+        continue
+    else:
+        print('{You won , horraaaa}')
+        break
