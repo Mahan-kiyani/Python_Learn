@@ -115,3 +115,9 @@
     git checkout {hash name} {file name}
     git checkout HEAD~3 \# 3 commit down from the master 
 
+    ** we can use {git checkout Head} Revert working directory to clean state (discard uncommitted changes)
+
+19-Git Restore
+
+    git restore {file name} \# Revert working directory to clean state (discard uncommitted changes)
+    git restore --staged \# Remove files from staging area
