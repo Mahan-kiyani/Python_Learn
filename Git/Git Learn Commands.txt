@@ -65,7 +65,7 @@
 
     git branch -m new_branch_name \# First, switch to the branch you want, then run this command.
     
-13- install gitlens on VsCode and see branch graph on thay
+13-install gitlens on VsCode and see branch graph on thay
 
 14-Git Merge 
     
@@ -97,5 +97,8 @@
     git diff \# comparison work directory with staging area
     git diff --staged \# comparison stage area with last commits
     git diff {HEAD or head} \# comparison work directory with last commits
-    
+    git diff {commit hash code}..{commit hash code} \# comparison one commit to another with hash code (first git log)
+    git diff {commit hash code}..{commit hash code} {file name} \# comparison one file in commit to another with hash code (first git log)
+    git diff {branch name}..{branch name} \# comparison two branches
+
 17-
