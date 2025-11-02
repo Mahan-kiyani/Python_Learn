@@ -22,6 +22,7 @@
 
     git log
     git log --oneline
+    git log --oneline --all \# show all commits 
     git log --stat
     git log --graph
     git log --graph --oneline
@@ -101,4 +102,16 @@
     git diff {commit hash code}..{commit hash code} {file name} \# comparison one file in commit to another with hash code (first git log)
     git diff {branch name}..{branch name} \# comparison two branches
 
-17-
+17-Gitignore 
+    
+    create gitignore file '.gitignore' in the path \# https://www.toptal.com/developers/gitignore
+    *.file_name \# all files with this suffix is ignore
+
+18-Git checkout
+
+    git checkout {hash name}
+    git switch {master or main}
+    git log --oneline --all \# show all commits 
+    git checkout {hash name} {file name}
+    git checkout HEAD~3 \# 3 commit down from the master 
+
