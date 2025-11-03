@@ -123,6 +123,39 @@
     git restore --staged {file name} \# Remove files from staging area
     git restore --source {hash name} {file name} \# Restore file(s) from a specific commit as source
 
-20-
+20-Git clean
+
+    git clean -h \# help for this command
+    git clean -f -d {file name}
+
+21-Git reset
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
