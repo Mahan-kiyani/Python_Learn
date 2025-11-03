@@ -129,33 +129,3 @@
     git clean -f -d {file name}
 
 21-Git reset
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

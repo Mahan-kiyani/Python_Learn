@@ -22,6 +22,7 @@
 
     git log
     git log --oneline
+    git log --oneline --all \# show all commits 
     git log --stat
     git log --graph
     git log --graph --oneline
@@ -65,7 +66,7 @@
 
     git branch -m new_branch_name \# First, switch to the branch you want, then run this command.
     
-13- install gitlens on VsCode and see branch graph on thay
+13-install gitlens on VsCode and see branch graph on thay
 
 14-Git Merge 
     
@@ -97,5 +98,34 @@
     git diff \# comparison work directory with staging area
     git diff --staged \# comparison stage area with last commits
     git diff {HEAD or head} \# comparison work directory with last commits
+    git diff {commit hash code}..{commit hash code} \# comparison one commit to another with hash code (first git log)
+    git diff {commit hash code}..{commit hash code} {file name} \# comparison one file in commit to another with hash code (first git log)
+    git diff {branch name}..{branch name} \# comparison two branches
+
+17-Gitignore 
     
-17-
+    create gitignore file '.gitignore' in the path \# https://www.toptal.com/developers/gitignore
+    *.file_name \# all files with this suffix is ignore
+
+18-Git checkout
+
+    git checkout {hash name} \# Switch to specific commit
+    git switch {master or main}
+    git log --oneline --all \# show all commits 
+    git checkout {hash name} {file name}
+    git checkout HEAD~3 \# Checkout commit three steps before HEAD 
+
+    ** we can use {git checkout Head} Revert working directory to clean state (discard uncommitted changes)
+
+19-Git Restore
+
+    git restore {file name} \# Revert working directory to clean state (discard uncommitted changes)
+    git restore --staged {file name} \# Remove files from staging area
+    git restore --source {hash name} {file name} \# Restore file(s) from a specific commit as source
+
+20-Git clean
+
+    git clean -h \# help for this command
+    git clean -f -d {file name}
+
+21-Git reset
