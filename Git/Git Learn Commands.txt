@@ -109,11 +109,11 @@
 
 18-Git checkout
 
-    git checkout {hash name}
+    git checkout {hash name} \# Switch to specific commit
     git switch {master or main}
     git log --oneline --all \# show all commits 
     git checkout {hash name} {file name}
-    git checkout HEAD~3 \# 3 commit down from the master 
+    git checkout HEAD~3 \# Checkout commit three steps before HEAD 
 
     ** we can use {git checkout Head} Revert working directory to clean state (discard uncommitted changes)
 
@@ -122,5 +122,7 @@
     git restore {file name} \# Revert working directory to clean state (discard uncommitted changes)
     git restore --staged {file name} \# Remove files from staging area
     git restore --source {hash name} {file name} \# Restore file(s) from a specific commit as source
+
+20-
 
 
