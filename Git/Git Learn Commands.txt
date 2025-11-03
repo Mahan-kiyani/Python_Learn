@@ -120,4 +120,7 @@
 19-Git Restore
 
     git restore {file name} \# Revert working directory to clean state (discard uncommitted changes)
-    git restore --staged \# Remove files from staging area
+    git restore --staged {file name} \# Remove files from staging area
+    git restore --source {hash name} {file name} \# Restore file(s) from a specific commit as source
+
+
