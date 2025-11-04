@@ -138,11 +138,12 @@
 
     git revert {hash ID} \# Revert specific commit by creating a new inverse commit
 
-23-Git 
- 
+23-Git status
 
+    git status -h
+    git status -s \# Show concise summary of file changes and repository status
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
