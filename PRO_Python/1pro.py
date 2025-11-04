@@ -1,3 +1,1 @@
 #pro project
-
-print('mahan')
