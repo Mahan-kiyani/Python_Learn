@@ -126,7 +126,7 @@
 20-Git clean
 
     git clean -h \# help for this command
-    git clean -f -d {file name}
+    git clean -f -d {file name} \# Clean working directory by removing all untracked files and folders
 
 21-Git reset
 
