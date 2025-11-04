@@ -129,3 +129,19 @@
     git clean -f -d {file name}
 
 21-Git reset
+
+    git reset --soft {hash ID} \# Reset project to previous commit but keep all changes ready to commit again
+    git reset
+
+
+
+
+
+
+
+
+
+
+
+
+
