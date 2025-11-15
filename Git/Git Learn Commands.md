@@ -126,6 +126,30 @@
 20-Git clean
 
     git clean -h \# help for this command
-    git clean -f -d {file name}
+    git clean -f -d {file name} \# Clean working directory by removing all untracked files and folders
 
 21-Git reset
+
+    git reset --soft {hash ID} \# Reset project to previous commit but keep all changes ready to commit again
+    git reset --mixed {hash ID} \# Reset to previous commit and keep changes unstaged for review
+    git reset --hard {hash ID} \# Completely reset project to selected commit (discard all local changes)
+
+22-Git revert
+
+    git revert {hash ID} \# Revert specific commit by creating a new inverse commit
+
+23-Git status
+
+    git status -h
+    git status -s \# Show concise summary of file changes and repository status
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
