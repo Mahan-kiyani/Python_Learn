@@ -72,6 +72,7 @@
     
     git merge name_of_branch \# First, switch to the branch you want, then run this command. {fast forward}
     git merge name_of_branch name_commit \# First, switch to the branch you want, then run this command. {non-fast forward}
+    git merge --abort \# Abort unfinished merge and restore repository to pre-merge state
 
 
 15-Commit Message Semantic
