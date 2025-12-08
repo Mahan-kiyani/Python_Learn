@@ -8,21 +8,21 @@ while True:
     operation = input('Enter your operation: ')
     match operation:
         case '+':
-            reslt = num_1 + num_2
+            result = num_1 + num_2
         
         case '-':
-            reslt = num_1 - num_2
+            result = num_1 - num_2
             
         case '*':
-            reslt = num_1 * num_2
+            result = num_1 * num_2
             
         case '/':
-            reslt = num_1 / num_2
+            result = num_1 / num_2
             
     break 
 
 
-if isinstance(reslt, int):
-    print(reslt)
+if isinstance(result, int):
+    print(result)
     
     
