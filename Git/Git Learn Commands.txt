@@ -152,6 +152,9 @@
 
 25-Git Remote
 
+    git remote \# list remote names
+    git remote -v \# List all remote repositories with their URLs
+    git remote remove <name> \# Delete a remote repository link from your local repository, so Git no longer tracks it
     git remote add <name ---> origin > <repository_url> \# Add a new remote repository to your local repository
 
 26-Git Push
