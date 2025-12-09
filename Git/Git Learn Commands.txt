@@ -6,8 +6,8 @@
 
 3- Git add to stage
     
-    [path] git add 'file name' \#{selected file to stage}
-    [path] git add . \#{all file to stage}
+    [path] git add 'file name' \#<selected file to stage>
+    [path] git add . \#<all file to stage>
 
 4-Git removed stage
     
@@ -70,8 +70,8 @@
 
 14-Git Merge 
     
-    git merge name_of_branch \# First, switch to the branch you want, then run this command. {fast forward}
-    git merge name_of_branch name_commit \# First, switch to the branch you want, then run this command. {non-fast forward}
+    git merge <name_of_branch> \# First, switch to the branch you want, then run this command. <fast forward>
+    git merge <name_of_branch> <name_commit> \# First, switch to the branch you want, then run this command. <non-fast forward>
     git merge --abort \# Abort unfinished merge and restore repository to pre-merge state
 
 
@@ -98,10 +98,10 @@
 
     git diff \# comparison work directory with staging area
     git diff --staged \# comparison stage area with last commits
-    git diff {HEAD or head} \# comparison work directory with last commits
-    git diff {commit hash code}..{commit hash code} \# comparison one commit to another with hash code (first git log)
-    git diff {commit hash code}..{commit hash code} {file name} \# comparison one file in commit to another with hash code (first git log)
-    git diff {branch name}..{branch name} \# comparison two branches
+    git diff <HEAD or head> \# comparison work directory with last commits
+    git diff <commit hash code>..<commit hash code> \# comparison one commit to another with hash code (first git log)
+    git diff <commit hash code>..<commit hash code> <file name> \# comparison one file in commit to another with hash code (first git log)
+    git diff <branch name>..<branch name> \# comparison two branches
 
 17-Gitignore 
     
@@ -110,34 +110,34 @@
 
 18-Git checkout
 
-    git checkout {hash name} \# Switch to specific commit
-    git switch {master or main}
+    git checkout <hash name> \# Switch to specific commit
+    git switch <master or main>
     git log --oneline --all \# show all commits 
-    git checkout {hash name} {file name}
+    git checkout <hash name> <file name>
     git checkout HEAD~3 \# Checkout commit three steps before HEAD 
 
-    ** we can use {git checkout Head} Revert working directory to clean state (discard uncommitted changes)
+    ** we can use <git checkout Head> Revert working directory to clean state (discard uncommitted changes)
 
 19-Git Restore
 
-    git restore {file name} \# Revert working directory to clean state (discard uncommitted changes)
-    git restore --staged {file name} \# Remove files from staging area
-    git restore --source {hash name} {file name} \# Restore file(s) from a specific commit as source
+    git restore <file name> \# Revert working directory to clean state (discard uncommitted changes)
+    git restore --staged <file name> \# Remove files from staging area
+    git restore --source <hash name> <file name> \# Restore file(s) from a specific commit as source
 
 20-Git clean
 
     git clean -h \# help for this command
-    git clean -f -d {file name} \# Clean working directory by removing all untracked files and folders
+    git clean -f -d <file name> \# Clean working directory by removing all untracked files and folders
 
 21-Git reset
 
-    git reset --soft {hash ID} \# Reset project to previous commit but keep all changes ready to commit again
-    git reset --mixed {hash ID} \# Reset to previous commit and keep changes unstaged for review
-    git reset --hard {hash ID} \# Completely reset project to selected commit (discard all local changes)
+    git reset --soft <hash ID> \# Reset project to previous commit but keep all changes ready to commit again
+    git reset --mixed <hash ID> \# Reset to previous commit and keep changes unstaged for review
+    git reset --hard <hash ID> \# Completely reset project to selected commit (discard all local changes)
 
 22-Git revert
 
-    git revert {hash ID} \# Revert specific commit by creating a new inverse commit
+    git revert <hash ID> \# Revert specific commit by creating a new inverse commit
 
 23-Git status
 
@@ -146,10 +146,18 @@
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
+24-Git Clone
 
+    git clone <repository_url ---> https or ssh> \# Create a local copy of a remote repository, so you can work on it
 
+25-Git Remote
 
+    git remote add <name ---> origin > <repository_url> \# Add a new remote repository to your local repository
 
+26-Git Push
+
+    git push \# Push the current branch to its default remote repository 
+    git push <remote_name> <branch_name> \# Upload local commits to a remote repository
 
 
 
