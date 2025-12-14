@@ -11,9 +11,9 @@
 
 4-Git removed stage
     
-    [path] git rm --cached 'file name'
+    [path] git rm --cached 'file name' \# Stop tracking a file in Git without deleting it from the local directory
     
-5-Git send to repo
+5-Git send to repo (The git push command is fully explained in tip 26)
     
     [path] git commit -m 'your_message'
     git push origin main
@@ -37,7 +37,7 @@
 8- Git Show 
 
     git show \# last changes in project
-    git show 'commit_ID'
+    git show 'commit_ID' \# Display detailed information about a specific commit, including its changes, author, and message
     
 9-Git shortcut create
 
@@ -52,26 +52,27 @@
 10-Git Branch
 
     git branch \# show branchs on your project
-    git branch branch_name  \# create a branch
-    git switch branch_name \# go to the branch you wish
-    gir switch -c branch_name \# create and go to the branch 
+    git branch <branch_name>  \# create a branch
+    git branch -r \# List all remote branches available in the connected repositories(use for git fetch and ...)
+    git switch <branch_name> \# go to the branch you wish
+    git switch -c <branch_name> \# create and go to the branch 
     
 11-Git remove a branch
     
-    git branch -d branch name \# if you on that task you cant delete it, you must be switch
-    git branch -D branch name \# if you’ve committed or added changes but haven’t merged them into the branch, you need to use -D to delete it.
+    git branch -d <branch name> \# if you on that task you cant delete it, you must be switch
+    git branch -D <branch name> \# if you’ve committed or added changes but haven’t merged them into the branch, you need to use -D to delete it.
     
     
 12-Git rename branch
 
-    git branch -m new_branch_name \# First, switch to the branch you want, then run this command.
+    git branch -m <new branch name> \# First, switch to the branch you want, then run this command.
     
 13-install gitlens on VsCode and see branch graph on thay
 
 14-Git Merge 
     
-    git merge <name_of_branch> \# First, switch to the branch you want, then run this command. <fast forward>
-    git merge <name_of_branch> <name_commit> \# First, switch to the branch you want, then run this command. <non-fast forward>
+    git merge <name of branch> \# First, switch to the branch you want, then run this command. <fast forward>
+    git merge <name of branch> <name_commit> \# First, switch to the branch you want, then run this command. <non-fast forward>
     git merge --abort \# Abort unfinished merge and restore repository to pre-merge state
 
 
@@ -162,6 +163,30 @@
     git push \# Push the current branch to its default remote repository 
     git push <remote_name> <branch_name> \# Upload local commits to a remote repository
     git push -u <remote_name> <branch_name> \# Push the specified branch to the remote repository and set it as the default branch for future push and pull commands
+
+27-Git Pull
+
+    git pull \# Fetch changes from the remote repository and merge them into the current branch
+
+28-Git Fetch
+
+    git fetch <remote> <branch> \# Download updates from a remote branch to your local repository without merging them, allowing you to review changes before integrating
+
+    { git pull == git fetch && git merge }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
