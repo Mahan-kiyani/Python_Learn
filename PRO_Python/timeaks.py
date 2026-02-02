@@ -1,5 +1,7 @@
 import time
 import os
+
+
 while True:
     
     select = input('start or not (y/n): ').lower()
@@ -15,7 +17,7 @@ while True:
             print(total)
             total -= 1
             time.sleep(1)
-            os.system('clear')
+            os.system('cls')
     else:
         break
     
