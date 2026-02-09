@@ -145,6 +145,32 @@
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
+24-Git Clone
+
+    git clone <repository_url ---> https or ssh> \# Create a local copy of a remote repository, so you can work on it
+
+25-Git Remote
+
+    git remote \# list remote names
+    git remote -v \# List all remote repositories with their URLs
+    git remote remove <name> \# Delete a remote repository link from your local repository, so Git no longer tracks it
+    git remote add <name(origin usually)> <repository_url> \# Add a new remote repository to your local repository
+
+26-Git Push
+
+    git push \# Push the current branch to its default remote repository 
+    git push <remote_name> <branch_name> \# Upload local commits to a remote repository
+    git push -u <remote_name> <branch_name> \# Push the specified branch to the remote repository and set it as the default branch for future push and pull commands
+
+27-Git Pull
+
+    git pull \# Fetch changes from the remote repository and merge them into the current branch
+
+28-Git Fetch
+
+    git fetch <remote> <branch> \# Download updates from a remote branch to your local repository without merging them, allowing you to review changes before integrating
+
+    { git pull == git fetch && git merge }
 
 
 
