@@ -2,7 +2,7 @@ from random import choices
 
 lst = ['borna', 'mahan', 'ali', 'neamat', 'omid', 'radman']
 num = int(input('num: '))
-gyggfdsa    
+
 dic_lis = ['name', 'score', 'game']
 lst = []
 for i in range(num):

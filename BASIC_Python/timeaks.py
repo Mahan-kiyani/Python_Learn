@@ -17,7 +17,12 @@ while True:
             print(total)
             total -= 1
             time.sleep(1)
-            os.system('cls')
+            
+            if os.name == 'nt':
+                os.system('cls')
+            else:
+                os.system('clear')
+
     else:
         break
     

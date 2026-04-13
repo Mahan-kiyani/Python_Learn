@@ -3,7 +3,7 @@ import string
 
 lower = string.ascii_lowercase
 upper = string.ascii_uppercase
-symbols = '&$@._'
+symbols = '&$@._#~-^@!'
 numbers = '0123456789'
 
 all = lower + upper + symbols + numbers
