@@ -1,7 +1,8 @@
 def Max(*args):
     
     max_num = float('-inf')
-    for i in args:
+    for i in args[0]:
+
         if i > max_num:
             max_num = i
         
@@ -10,7 +11,7 @@ def Max(*args):
 def Min(*args):
     
     min_num = float('inf')
-    for i in args:
+    for i in args[0]:
         if i < min_num:
             min_num = i
         
