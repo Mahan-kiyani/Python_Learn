@@ -1,9 +1,6 @@
-class Student:
-    pass
+from package_1.mod1 import *
 
-s1 = Student()
-s2 = Student()
-
-s1.name = 'Mahan kiyani'
-s1.age = 23
+s1 = Student('mahan', 98020, 23)
+print(s1.name)
 print(s1.age)
+print(_g)
