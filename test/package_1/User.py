@@ -1,6 +1,6 @@
 from typing import List
 from pprint import pprint
-
+#cspell:disable
 class UserList(list):
     def search(self, user_name: str) -> List['User']:
         matching_users: List['User'] = []
