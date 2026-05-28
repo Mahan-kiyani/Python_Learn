@@ -1,7 +1,8 @@
 from typing import List
 from pprint import pprint
 #cspell:disable
-class UserList(list):
+
+class UserList(list['User']):
     def search(self, user_name: str) -> List['User']:
         matching_users: List['User'] = []
         for user in self:
@@ -43,28 +44,19 @@ class buyer(User):
     def __repr__(self):
         return f'{self.__class__.__name__}({self.user_name!r}, {self.email!r}, {self.psw!r}, {self.phone!r})'   
      
-        
-        
-        
-        
          
 def main():
         
-    user1 = User('gmail', 'mahan', '789') 
-    user2 = User('gmail', 'kimia', '798734')
-    user3 = User('gmail', 'mahan_kiyani', '00000')
-    user4 = User('gmail', 'fati', '339234827')
-    user5 = buyer('@gmail', 'Mahan kiyani', '459374', '09437656677')  
-    # pprint(User.user_list.search('mahan'))
-    li = UserList()
-    li.append(user5)
-    print(li)
+    # user1 = User('gmail', 'mahan', '789') 
+    # user2 = User('gmail', 'kimia', '798734')
+    # user3 = User('gmail', 'mahan_kiyani', '00000')
+    # user4 = User('gmail', 'fati', '339234827')
+    # user5 = buyer('@gmail', 'Mahan kiyani', '459374', '09437656677')  
+    # # pprint(User.user_list.search('mahan'))
+    # li = UserList()
+    # li.append(user5)
+    # print(li)
+    
 
-    
-    
-    
-    
-    
-    
 if __name__ == '__main__':
     main()
