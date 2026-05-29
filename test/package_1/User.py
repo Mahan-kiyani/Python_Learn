@@ -12,13 +12,13 @@ class UserList(list['User']):
         return matching_users
     
     def append(self, object):
-        
         if not isinstance(object, User):
             raise TypeError('This list only accept User')
         return super().append(object)
 
 class User:
     user_list: List['User'] = UserList()
+    
     def __init__(self, email: str, user_name: str, psw : str) -> None:
         self.user_name = user_name
         self.email = email
