@@ -25,6 +25,8 @@ def main():
     s1.score('fizik', 20)
     s1.score('riazi', 11)
     s1.score('zist', 17)
+    s1.score('mohandesi', 10)
+    
     
     s1.avg()
 
